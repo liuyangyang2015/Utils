@@ -1,0 +1,16 @@
+Problem:
+Scanned document stored as series of jpeg images and I needed a PDF. There are ways to accomplish this without code (print to PDF), but I needed to make the file a particular size and print to pdf made the single PDF larger than the combined size of the images.
+
+Solution:
+iText PDF library and Java program to create a PDF with the images. See more about iText here: http://developers.itextpdf.com/itext-java
+
+See the code in Main.java. It started with a piece of code from nathan on stackoverflow with modifications to resize the image and to add multiple images (1 per page). See: http://stackoverflow.com/questions/15744454/how-to-convert-jpg-to-pdf-in-android-java
+
+Maven dependency:
+
+  <dependency>
+    <groupId>com.itextpdf</groupId>
+    <artifactId>itextpdf</artifactId>
+    <version>5.5.9</version>
+  </dependency>
+Analytics
